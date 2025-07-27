@@ -56,6 +56,12 @@ aside {
     flex: 1;
     overflow-y: auto;
 }
+h1 {
+	color: black;
+}
+h2 {
+	color: black;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -80,7 +86,12 @@ h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
 article {
+	background-color: aliceblue;
 }
+article p {
+	color: #232323;
+}
+
 header {
 	border-bottom: 1px solid rgb(221,221,221);
 	transition: border-bottom-color 1s ease;
