@@ -2,6 +2,52 @@
     --max-width: 1200px;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* General reset for common block elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Specific for lists if you want to be more explicit */
+ul, ol {
+    list-style: none; /* Removes bullets/numbers */
+}
+
+html {
+    /* Optional: Set a consistent base font-size for rem units if desired */
+    /* \\font-size: 100%; /* (equals 16px if browser default is 16px) */
+}
+
+body {
+    font-family: sans-serif; /* Or your preferred default font stack */
+    line-height: 1.5; /* Good for readability, unitless for scalability */
+    -webkit-font-smoothing: antialiased; /* macOS font rendering fix */
+    -moz-osx-font-smoothing: grayscale; /* macOS font rendering fix */
+}
+
+img, picture, video, canvas, svg {
+    display: block; /* Removes extra space below inline images */
+    max-width: 100%; /* Makes images responsive by default */
+}
+
+input, button, textarea, select {
+    font: inherit; /* Inherits font styles from parent */
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /* Modern property for word breaking */
+    word-break: break-word; /* Older property for compatibility */
+}
+
+a {
+    text-decoration: none; /* Removes default underline */
+    color: inherit; /* Inherit color from parent by default */
+}
+
 header nav {
     background: transparent;
     color: white;
@@ -13,24 +59,110 @@ header nav {
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    width: 234px;
 }
 
-ul li:not(:first-child) {
-    margin-left: 10px;
-}
 
 ul a {
     text-decoration: none;
     color: white;
+    font-family: Source Sans Pro;
 }
 
 header {
     padding: 20px 0;
+    z-index: 2;
 }
 
 nav {
-    border: 1px solid black;
     width: var(--max-width);
     margin: 0 auto;
 }
 
+.backgroundPicture {
+    background-image: url(./images/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0;
+    height: 1093px;
+}
+
+.review {
+    height: 392px;
+    background-color: #C271FF;
+    width: 100%;
+    margin: 0;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-family: Source Sans Pro;
+    margin-top: 150px;
+}
+
+.sglParent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sglChild span {
+    padding: 20px;
+    color: white;
+}
+
+.sglButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sglButton button{
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #C271FF;
+    border: none;
+
+}
+
+.prosText {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.users section {
+    display: flex;
+    align-items: center; 
+    width: 1009px; 
+    color: white;
+    justify-content: space-between;
+}
+
+.users section div {
+    text-align: center;
+}
+
+h2 span {
+    color:#C271FF;
+}
