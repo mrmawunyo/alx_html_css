@@ -1,0 +1,36 @@
+:root {
+    --max-width: 1200px;
+}
+
+header nav {
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li:not(:first-child) {
+    margin-left: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    border: 1px solid black;
+    width: var(--max-width);
+    margin: 0 auto;
+}
+
